@@ -10,7 +10,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class Result1 {
 
     /*
      * Complete the 'serviceLane' function below.
@@ -68,7 +68,7 @@ public class ServiceLine {
             }
         });
 
-        List<Integer> result = Result.serviceLane(n, width,cases);
+        List<Integer> result = Result1.serviceLane(n, width,cases);
 
         bufferedWriter.write(
                 result.stream()
