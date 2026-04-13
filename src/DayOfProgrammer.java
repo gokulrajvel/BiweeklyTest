@@ -21,15 +21,15 @@ class Result2 {
 
     public static String dayOfProgrammer(int year) {
         // Write your code here
-        int febDays;
+        int feb;
         if (year == 1918) {
-            febDays = 15;
+            feb = 15;
         } else if (year <= 1917) {
-            febDays = (year % 4 == 0) ? 29 : 28;
+            feb = (year % 4 == 0) ? 29 : 28;
         } else {
-            febDays = (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) ? 29 : 28;
+            feb = (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) ? 29 : 28;
         }
-        int throughAug = 31 + febDays + 31 + 30 + 31 + 30 + 31 + 31;
+        int throughAug = 31 + feb + 31 + 30 + 31 + 30 + 31 + 31;
         int day = 256 - throughAug;
         return String.format("%02d.%02d.%d", day, 9, year);
     }
